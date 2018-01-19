@@ -1,8 +1,8 @@
 module.exports.up = knex => {
   return knex.schema.createTable('markers', table => {
     table.increments('id')
-    table.string(lat)
-    table.string(lng)
+    table.string('lat')
+    table.string('lng')
     table.timestamps(false, true)
   })
 }
